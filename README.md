@@ -29,12 +29,6 @@ Please work with [Axiad Customer Success](mailto:customer.success@axiad.com) bef
 
 If your Axiad Cloud tenant is already configured with the required mappings attribute there is no additional Axiad configuration needed. If assistance is needed with your Axiad Cloud environment to configure SCIM, please contact [Axiad Customer Success](mailto:customer.success@axiad.com).
 
-## Configuring the Axiad SCIM Connector
-
-1. Get the latest SCIM Connector configuration and mapping file from the [Axiad Customer Success](mailto:customer.success@axiad.com) team.
-2. Copy the `provisioner.openicf-AxiadSCIMConnector.json` file into the `conf` directory where ForgeRock Identity Management is deployed.
-3. If the `sync.json` file exist in the `conf` directory, copy the contents of `mapping-AxiadSCIMConnector.json` in the mappings array inside the `conf\sync.json` file. If the `sync.json` file doesn't exist, copy the sync.json file to the `conf` directory.
-
 ## ForgeRock Configuration
 
 ### 1. Axiad SCIM Connector Configuration
@@ -50,7 +44,9 @@ If your Axiad Cloud tenant is already configured with the required mappings attr
   
    ![SCIM Endpoint](./images/scim_endpoint_config.png)
 
-   3.2. Configure the `Authentication token` under the `Additional Options` section as shown. If you do not have the token please contact [Axiad Customer Success](mailto:customer.success@axiad.com)
+   3.2. Configure the `Authentication method`
+     ![Authentication Method](./images/authentication_method.png)
+   3.3. Configure the `Authentication token` under the `Additional Options` section as shown. If you do not have the token please contact [Axiad Customer Success](mailto:customer.success@axiad.com)
   
    ![Authentication Token](./images/authentication_token_config.png)
 
